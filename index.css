@@ -1,0 +1,206 @@
+body
+{
+    background-color: rgb(0, 0, 255);
+    font: 20px 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    animation-name: background;
+    animation-duration: 4s;
+}
+
+h1
+{
+    font-size: 35vw;
+    letter-spacing: -3vw;
+    color: rgb(0,255,255);
+    font-style: italic;
+}
+
+#imageContainer
+{
+    position: relative;
+}
+
+img
+{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    z-index: 1;
+    transition: 0.5s;
+    transition-timing-function: ease;
+}
+
+#secondHeader
+{
+    margin-top: -50vw;
+    margin-left: 5vw;
+    line-height: 8vw;
+    animation-name: header2anim;
+    animation-duration: 4s;
+    width: 20%;
+}
+
+#firstHeader
+{
+    margin-top: 46.5vw;
+    margin-left: -16vw;
+    animation-name: header1anim;
+    animation-duration: 4s;
+}
+
+h2
+{
+    font-size: 12vw;
+    color: rgb(255,0,0);
+    font-weight: bold;
+    font-style: italic;
+}
+
+h3
+{
+    font-size: 36pt;
+    color: rgba(255,255,255,0.5);
+    line-height: 30pt;
+    letter-spacing: -3pt;
+    text-align: right;
+    margin-bottom: -28pt;
+    margin-top: -30pt;
+    padding-left: 20vw;
+}
+
+p
+{
+    font-size: 12pt;
+    color: rgb(255,255,255);
+    margin-left: -0.8vw;
+    text-align: justify;
+}
+
+#chapter
+{
+    margin-top: -3vw;
+    margin-left: 13vw;
+    line-height: 18pt;
+}
+
+#links
+{
+    line-height: -20pt;
+    margin-top: -3vw;
+    margin-left: 2vw;
+}
+
+p::first-letter
+{
+    font-size: 42pt;
+    color: rgb(0, 255, 255);
+    font-style: italic;
+    line-height: 11pt;
+}
+
+#buttons
+{
+    margin-top: 6vw;
+}
+
+.button {
+    background-color: rgb(0, 255, 255);
+    border: none;
+    color: rgb(0,0,255);
+    /*padding: 16px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20pt;
+    margin-right: 1vw;
+    margin-bottom: 2vw;
+    line-height: 24pt;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0px 0px rgb(255, 255, 255);
+    width: 100%;
+}
+.button:hover {
+    background-color: rgb(255,0,0);
+    color: white;
+    box-shadow: 8px 8px rgb(255, 255, 255);
+}
+
+@media only screen and (min-width: 768px)
+{
+    .floating-box
+    {
+        width: 320px;
+    }
+    .button
+    {
+        width: 48%;
+    }
+
+
+  #firstHeader
+  {
+    margin-top: -16.5vw;
+    margin-left: -16vw;
+    animation-name: header1anim;
+    animation-duration: 4s;
+  }
+
+
+   #secondHeader
+  {
+    margin-top: -50vw;
+    margin-left: 5vw;
+    line-height: 8vw;
+    animation-name: header2anim;
+    animation-duration: 4s;
+    width: 100%;
+    white-space: nowrap;
+  }
+
+  h1
+  {
+    font-size: 35vw;
+    letter-spacing: -3vw;
+    color: rgb(0,255,255);
+    font-style: italic;
+  }
+
+    h2
+    {
+    font-size: 6vw;
+    color: rgb(255,0,0);
+    font-weight: bold;
+    font-style: italic;
+    }
+}
+
+#stretch
+{
+    animation-name: stretchAnim;
+    animation-duration: 0.25s;
+}
+
+@keyframes stretchAnim {
+    from {height: 400vh}
+    to {height: 0vh}
+}
+
+@keyframes header2anim
+{
+    from {margin-left: -100vw}
+    to {margin-left: 5vw}
+}
+
+@keyframes header1anim
+{
+    from {margin-left: 100vw}
+    to {margin-left: -16vw}
+}
+
+@keyframes background
+{
+  from {background-color: rgb(0, 0, 0)}
+  to {background-color: rgb(0, 0, 255)}
+}
