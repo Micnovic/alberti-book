@@ -13,6 +13,25 @@ h1
     font-style: italic;
 }
 
+#folder
+{
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 25px;
+    margin-bottom: 25px;
+    margin-right: 10px;
+}
+
+#folderName
+{
+    font-size: 42pt;
+    color: rgb(0,0,255);
+    text-align: center;
+    margin-top: 0pt;
+    margin-bottom: 15pt;
+    padding-left: 0pt;
+
+}
+
 #imageContainer
 {
     position: relative;
@@ -126,6 +145,15 @@ p::first-letter
 
 @media only screen and (min-width: 768px)
 {
+    #folder
+    {
+        margin-right: 25px;
+        padding-right: 0px;
+    }
+    #folderName
+    {
+        text-align: left;
+    }
     img
     {
     width: 500px;
